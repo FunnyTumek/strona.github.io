@@ -52,6 +52,8 @@
                    onclick="increaseFontSizeBy1px()">
             <input type="button" class="btn" style="background-color:transparent" value="A-"
                    onclick="decreaseFontSizeBy1px()">
+            <input type="button" class="btn" style="background-color:transparent" value="Zmień kontrast"
+                   onclick="contrast()">
         </div>
     </nav>
 </div>
@@ -247,7 +249,28 @@
 
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
-
+<script>
+    function contrast() {
+        var css = 'html {-webkit-filter: invert(100%);' + '-moz-filter: invert(100%);' + '-o-filter: invert(100%);' + '-ms-filter: invert(100%); }';
+        var head = document.getElementsByTagName('head')[0];
+        var style = document.createElement('style');
+        if (!window.counter) {
+            window.counter = 1;
+        } else {
+            window.counter++;
+            if (window.counter % 2 == 0) {
+                var css = 'html {-webkit-filter: invert(0%); -moz-filter: invert(0%); -o-filter: invert(0%); -ms-filter: invert(0%); }'
+            }
+        }
+        style.type = 'text/css';
+        if (style.styleSheet) {
+            style.styleSheet.cssText = css;
+        } else {
+            style.appendChild(document.createTextNode(css));
+        }
+        head.appendChild(style);
+    }
+</script>
 </body>
 
 </html>
