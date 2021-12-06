@@ -22,6 +22,7 @@
             console.log(currentSize);
             document.documentElement.style.fontSize = currentSize.toString() + 'px';
         }
+
         function decreaseFontSizeBy1px() {
             var id = document.documentElement;
             var style = window.getComputedStyle(id, null).getPropertyValue('font-size');
@@ -43,23 +44,38 @@
 </head>
 
 <body>
+
+<div class="container">
+    <nav class="navbar justify-content-between">
+        <a class="navbar-brand"></a>
+        <div class="float-xl-right">
+            <input type="button" class="btn" style="background-color:transparent" value="A+"
+                   onclick="increaseFontSizeBy1px()">
+            <input type="button" class="btn" style="background-color:transparent" value="A-"
+                   onclick="decreaseFontSizeBy1px()">
+        </div>
+    </nav>
+</div>
+
 <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg custom_nav-container ml-lg-5">
-                <a class="navbar-brand mr-lg-5" href="index.html">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand" href="index.html">
                     <h3>
                         Uczelnia
                     </h3>
                     <span> wyższa</span>
                 </a>
-                <span class="navbar-text ml-lg-5">
-                                    <div class="collapse navbar-collapse ml-auto ml-lg-5" id="navbarSupportedContent">
-                    <ul class="navbar-nav  ml-auto ml-lg-5">
-                        <li class="nav-item active ml-lg-5">
-                            <a class="nav-link ml-lg-5" href="index.html">Strona główna <span
-                                    class="sr-only">(current)</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Strona główna <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="student.html"> Dla studenta </a>
@@ -73,18 +89,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="kontakt.html">Kontakt</a>
                         </li>
-
                     </ul>
-
-                </div>
-
-    </span>
-                <div class="collapse navbar-collapse ml-auto">
-                    <ul class="navbar-nav  ml-auto">
-                    </ul>
-                    <input type="button" value="+" onclick="increaseFontSizeBy1px()">
-                    A
-                    <input type="button" value="-" onclick="decreaseFontSizeBy1px()">
                 </div>
             </nav>
         </div>
