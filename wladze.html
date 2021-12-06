@@ -13,7 +13,25 @@
   <meta name="author" content="" />
 
   <title>Władze wydziału</title>
+  <script>
+    function increaseFontSizeBy1px() {
+      var id = document.documentElement;
+      var style = window.getComputedStyle(id, null).getPropertyValue('font-size');
+      var currentSize = parseInt(style);
+      currentSize++;
+      console.log(currentSize);
+      document.documentElement.style.fontSize = currentSize.toString() + 'px';
+    }
 
+    function decreaseFontSizeBy1px() {
+      var id = document.documentElement;
+      var style = window.getComputedStyle(id, null).getPropertyValue('font-size');
+      var currentSize = parseInt(style);
+      currentSize--;
+      console.log(currentSize);
+      document.documentElement.style.fontSize = currentSize.toString() + 'px';
+    }
+  </script>
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!-- fonts style -->
