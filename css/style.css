@@ -27,7 +27,14 @@ body {
 .layout_padding-bottom {
   padding-bottom: 90px;
 }
-
+a:hover {
+font-weight: bold;
+color: white !important;
+}
+.btn:hover {
+font-weight: bold;
+color: white !important;
+}
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
