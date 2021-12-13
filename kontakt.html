@@ -31,6 +31,10 @@
       console.log(currentSize);
       document.documentElement.style.fontSize = currentSize.toString() + 'px';
     }
+	function sendButton() {
+	$("#beforeClick").css("display","none");
+	$("#afterClick").css("display","block");
+	}
   </script>
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -139,11 +143,15 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="contact-form">
+          <div class="contact-form" >
             <h5>
               Skontaktuj się z nami
             </h5>
-			<form>
+			<div class="container text-center" id="afterClick" style="display: none; min-height: 300px; color: white; padding-top: 50px;">
+			Dziękuje za wysłanie wiadomości. <br>
+			Postaramy się odpowiedzieć na nią jak to tylko możliwe.
+			</div>
+			<form id="beforeClick">
 			  <div class="form-group text-light">
 				<label for="exampleInputEmail0">Imię</label>
 				<input type="email" class="form-control" id="exampleInputEmail0" aria-describedby="emailHelp1" placeholder="Imię">
@@ -170,7 +178,7 @@
 				<small id="emailHelp5" class="form-text  text-light">Wprowadź wiadomość.</small>
 			  </div>
 			  <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-primary">
+                <button type="button" class="btn btn-primary" onClick="sendButton()">
                   Wyślij
                 </button>
               </div>
