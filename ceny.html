@@ -12,7 +12,7 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
 
-    <title>Strona główna</title>
+    <title>Dla studenta</title>
     <script>
         function increaseFontSizeBy1px() {
             var id = document.documentElement;
@@ -32,6 +32,7 @@
             document.documentElement.style.fontSize = currentSize.toString() + 'px';
         }
     </script>
+
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
     <!-- fonts style -->
@@ -42,8 +43,6 @@
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet"/>
 </head>
-
-<body>
 
 <div class="container">
     <nav class="navbar justify-content-between">
@@ -59,33 +58,35 @@
              onclick="decreaseFontSizeBy1px()">
       <input type="button" class="btn" style="color: black !important;" value="Zmień kontrast"
              onclick="contrast()">
-			 <img src="images/fb.png" alt="fb">
     </div>
     </nav>
 </div>
 
+<body class="sub_page">
 <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
         <div class="container-fluid" id="navva">
-            <nav class="navbar navbar-expand-lg custom_nav-container " >
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
                 <a class="navbar-brand" href="index.html">
                     <h3>
-                        UCZELNIA
+                        Uczelnia
                     </h3>
                     <span style="color: #486e6f"> wyższa</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
                     <ul class="navbar-nav  ml-auto">
-                        <li class="nav-item active">
-						
-                            <a class="nav-link" href="index.html">Strona główna <span class="sr-only">(current)</span></a>
-                        </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="index.html">Strona główna <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
                             <a class="nav-link" href="student.html"> Dla studenta </a>
                         </li>
                         <li class="nav-item">
@@ -102,31 +103,8 @@
             </nav>
         </div>
     </header>
-
-
-    <section class=" slider_section position-relative">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <div class="detail-box">
-                                    <div style="background-color: rgba(0,0,0,0.4);">
-                                        <h1>
-                                            Wyższa Szkoła Informatyki i Zarządzania
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- end header section -->
 </div>
-
 <section class="bg-title colored">
     <div class="container-fluid">
         <div class="row">
@@ -138,9 +116,28 @@
                                 <li property="itemListElement" typeof="ListItem" class="home breadcrumb-item">
                                     <a property="item" typeof="WebPage" href="index.html">
                     <span property="name" style="color: #0b5356">
-                        Strona główna                    </span>
+                        Dla studenta                    </span>
                                     </a>
                                 </li>
+                                <li property="itemListElement" typeof="ListItem" class="breadcrumb-item">
+                                    <a property="item" typeof="WebPage" href="student.html">
+                        <span property="name" style="color: #0b5356">
+                            Rodzaje studiów                        </span>
+                                    </a>
+                                </li>
+								<li property="itemListElement" typeof="ListItem" class="breadcrumb-item">
+                                    <a property="item" typeof="WebPage" href="student.html">
+                        <span property="name" style="color: #0b5356">
+                            Studia inżynierskie                      </span>
+                                    </a>
+                                </li>
+								<li property="itemListElement" typeof="ListItem" class="breadcrumb-item">
+                                    <a property="item" typeof="WebPage" href="student.html">
+                        <span property="name" style="color: #0b5356">
+                            Studia niestacjonarne                        </span>
+                                    </a>
+                                </li>
+
                             </ol>
                         </nav>
                     </div>
@@ -149,10 +146,60 @@
         </div>
     </div>
 </section>
-
-<section class="big-titles" style="">
+<!-- about section -->
+<section class="about_section layout_padding">
+    <div class="side_img">
+        <img src="images/side-img.png" alt=""/>
+    </div>
     <div class="container">
-                        <img src="images/strongaglowa.JPG" alt="stronaglowna"></a></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="img_container">
+                    <div class="img-box b1">
+                        <img src="images/a-11.jpg" alt=""/>
+                    </div>
+                    <div class="img-box b2">
+                        <img src="images/a-2.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <div class="heading_container">
+                        <h3>
+                            Studia niestacjonarne
+                        </h3>
+                        <p>
+                            <ul>
+<li>Studia trwają 3,5 roku (tytuł: Inżynier, 210 ECTS)</li>
+<li>Kierunek: <b>Informatyka</b></li>
+<li>Specjalizacje: 
+<b>
+<ul>
+<li>Grafika komputerowa,</li>
+<li>Programowanie,</li>
+<li>Administracja sieci,</li>
+<li>Webdeveloper,</li>
+<li>E-Marketing</li>
+</ul>
+</b></li>
+<li>Materiały edukacyjne i testy na platformie edukacyjnej WSIZ</li>
+<li>Sesja egzaminacyjna w siedzibie uczelni</li>
+<li>Dwa nabory w roku: <b>1 października 2021r. lub 1 marca 2022r. </b></li>
+<li>Stacjonarne zajęcia w uczelni w terminach wg <a href="https://www.wsi.edu.pl/wp-content/uploads/2021/08/Plan_zajec_stacjonarnych_online.pdf" rel="noopener noreferrer" target="_blank">załączonego planu</a></li>
+<li>Czesne
+<ul>
+<li><strong>50 zł – wpisowe</strong> (wpłacane przy pierwszej opłacie czesnego za studia)</li>
+<li><b>600 zł/m-c </b>(przez 10 miesięcy w roku)</li>
+<li><strong>250 zł/m-c </strong>(okres wakacyjny – lipiec i sierpień)</li>
+</ul>
+</li>
+</ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -190,7 +237,7 @@
                         O uczleni
                     </h5>
                     <p>
-                        Uczelnia dostosowana jest do wszystkich studentów
+                        Uczelnia dostosowana jest do wszystkoch studentów
                     </p>
                 </div>
             </div>
@@ -202,17 +249,13 @@
                     </h5>
                     <div class="info_contact">
                         <a href="">
-                            ul. Legionów 81;
-                            43-300 Bielsko-Biała
+                            ul. Nadbystrzycka 38D; 20-618 Lublin
                         </a>
                         <a href="">
-                            biurowsiz@gmail.com
+                            uczelnia@uczelnia.pl
                         </a>
                         <a href="">
-                            Telefon: +48 506 495 335
-                        </a>
-                        <a href="">
-                            Nr konta bankowego: 03 1240 1170 1111 0010 5635 9825
+                            Telefon: +48 530 312 433
                         </a>
                     </div>
                 </div>
@@ -231,32 +274,29 @@
 
 </footer>
 
-
-<!-- footer section -->
-
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script>
-function contrast() {
-var css = 'html {-webkit-filter: invert(100%);' + '-moz-filter: invert(100%);' + '-o-filter: invert(100%);' + '-ms-filter: invert(100%); }';
-    var head = document.getElementsByTagName('head')[0];
-    var style = document.createElement('style');
-    if (!window.counter) { 
-        window.counter = 1;
-    } else { 
-        window.counter++;
-        if (window.counter % 2 == 0) { 
-            var css = 'html {-webkit-filter: invert(0%); -moz-filter: invert(0%); -o-filter: invert(0%); -ms-filter: invert(0%); }'
-        } 
+    function contrast() {
+        var css = 'html {-webkit-filter: invert(100%);' + '-moz-filter: invert(100%);' + '-o-filter: invert(100%);' + '-ms-filter: invert(100%); }';
+        var head = document.getElementsByTagName('head')[0];
+        var style = document.createElement('style');
+        if (!window.counter) {
+            window.counter = 1;
+        } else {
+            window.counter++;
+            if (window.counter % 2 == 0) {
+                var css = 'html {-webkit-filter: invert(0%); -moz-filter: invert(0%); -o-filter: invert(0%); -ms-filter: invert(0%); }'
+            }
+        }
+        style.type = 'text/css';
+        if (style.styleSheet) {
+            style.styleSheet.cssText = css;
+        } else {
+            style.appendChild(document.createTextNode(css));
+        }
+        head.appendChild(style);
     }
-    style.type = 'text/css';
-    if (style.styleSheet) {
-        style.styleSheet.cssText = css;
-    } else {
-        style.appendChild(document.createTextNode(css));
-    }
-    head.appendChild(style);
-}
 </script>
 </body>
 
